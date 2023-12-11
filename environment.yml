@@ -1,0 +1,13 @@
+name: datascience
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8  # You can specify the version of Python here
+  - numpy
+  - pandas
+  - matplotlib
+  - tqdm
+  - pip
+  - pip:
+    - jupyterlab  # You can also include pip packages if needed
