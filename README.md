@@ -26,13 +26,14 @@ Here's a tentative outline of the course:
 
  - **Week 2**:  Python for Data Science
     - Introduction to Python programming
+    - Jupyter notebooks
     - Python libraries for Data Science: NumPy and pandas
     - Basic Python data structures (lists, dictionaries, sets, tuples)
     - Basic operations with pandas: data loading, cleaning, and manipulation
 
  - **Week 3**:  Basic Data Processing and Transformations
     - Data preprocessing techniques
-    - Handling missing data
+    - Handling missing data (imputation)
     - Data transformation: encoding, scaling, normalization
     - Introduction to data wrangling with pandas
 
@@ -43,19 +44,20 @@ Here's a tentative outline of the course:
     - Correlation vs causation
 
  - **Week 5**:  Exploratory Data Analysis (EDA)
-    - Why EDA?
+    - What is EDA? Why?
     - Descriptive statistics
     - Basic data visualization (histograms, scatter plots, line plots)
+    - Finding outliers
     - Multivariate analysis
     - Connecting features (correlation)
-    - Dimension Reduction: PCA and non-linear methods
-    - Finding outliers
+    - Dimension Reduction: PCA
 
  - **Week 6**:  Advanced Data Visualization Techniques
     - Visualization best practices and storytelling
     - Multivariate density plots and box plots
     - Working with geographical data (GeoPandas)
     - Interactive visualizations
+    - Non-linear dimension reduction
 
  - **Week 7**:  Introduction to Machine Learning
     - Overview of Machine Learning
@@ -96,19 +98,26 @@ As of now, only the materials for **Week 5: Exploratory Data Analysis** are avai
 Students are required to know the basics of algorithms and programming (preferably Python), statistics and linear algebra.
 
 ### Grades
+Students will be evaluated based on their performance in participation, attendance, assignments, final project and the final exam. The final grade will be calculated as follows:
+
+ - 20% - Participation and attendance
+ - 20% - Assignments
+ - 30% - Final project
+ - 30% - Final exam
+
+Some assignments may give bonus points for the final grade.
 
 
 ### Recommended Books and Resources
 
-To supplement your learning, here are some highly recommended books and resources on Data Science with Python:
+Here are some highly recommended books and resources on Data Science with Python:
 
 1. **"Python Data Science Handbook" by Jake VanderPlas**: A comprehensive guide to using Python for data analysis, manipulation, and visualization.
 2. **"Data Science from Scratch" by Joel Grus**: A great introduction to Data Science fundamentals using Python.
-3. **"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron**: Excellent for understanding machine learning and deep learning concepts with Python.
+3. **"Python for Data Analysis"** by Wes McKinney (the creator of pandas): A practical guide to using Python for data analysis, manipulation, and visualization.
 4. **"Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido**: A practical approach to learning machine learning with Python.
-5. **Online Courses and Tutorials**: Platforms like Coursera, edX, and DataCamp offer various courses in Python for Data Science.
-6. **Kaggle**: Participate in competitions or explore kernels for practical experience.
-7. **Official Python Documentation**: For understanding Python in-depth.
+6. **Kaggle**: Participate in competitions or explore kernels for practical experience. (https://www.kaggle.com)
+7. **Awesome Public Datasets**: For understanding Python in-depth. (https://github.com/awesomedata/awesome-public-datasets)
 
 ### Getting Started
 
@@ -139,34 +148,26 @@ Miniconda is a minimal installer for Conda, a package manager and environment ma
 
 Creating a separate environment for your Data Science projects is good practice:
 
-1. **Create a New Environment**:
-   - In your terminal, run: `conda create --name datascience python=3.x` (replace `3.x` with the specific Python version you prefer, e.g., `3.8`).
+1. **Create a New Environment for this course**:
+    - Run the command: `conda env create -f environment.yml`. This will create a new environment called datascience with all the necessary packages installed.
 
 2. **Activate the Environment**:
    - Run: `conda activate datascience`.
 
-### Step 3: Install Jupyter Lab
-
-Jupyter Lab is an interactive development environment that extends the capabilities of Jupyter Notebook:
-
-1. **Install Jupyter Lab**:
-   - With your environment activated, run: `conda install -c conda-forge jupyterlab`.
-
-2. **Launch Jupyter Lab**:
+3. **Launch Jupyter Lab**:
    - Run: `jupyter lab`.
    - This will open Jupyter Lab in your default web browser.
 
-### Step 4: Install Essential Packages
+### Step 3: Manually Install Essential Packages
 
-Install packages like Matplotlib, Pandas, and NumPy:
+The created environment already includes most of the packages we'll need, but if you need to install any additional packages, here's how:
 
-1. **Install packages**:
-   - Run the command: conda env create -f environment.yml. This will create a new environment called datascience with all the necessary packages installed.
+1. **Manually Install Packages **:
+   - In your activated environment, run: `conda install <name of the package>` to install the packages
+   - For example, to install the `scikit-learn` package, run: `conda install scikit-learn`.
+   - Alternatively, you can use `pip install <name of the package>` to install packages from PyPI.
 
-2. **Manually Install Packages (alternative)**:
-   - In your activated environment, run: `conda install numpy pandas matplotlib` to install the packages
-
-### Step 5: Verify Installation
+### Step 4: Verify Installation
 
 Make sure everything is installed correctly:
 

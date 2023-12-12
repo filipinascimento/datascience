@@ -3,11 +3,19 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8  # You can specify the version of Python here
+  - python=3.8
   - numpy
   - pandas
   - matplotlib
   - tqdm
   - pip
+  - ipywidgets
+  - jupyterlab
+  - scipy
+  - scikit-learn
+  - seaborn
   - pip:
-    - jupyterlab  # You can also include pip packages if needed
+    - ipympl
+    - mplcursors  
+
+
